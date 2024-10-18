@@ -1,0 +1,16 @@
+{
+  "name": "studies",
+  "image": "ghcr.io/ppoi/devcontainer-images/base:latest",
+  "containerUser": "vscode",
+  "capAdd": ["AUDIT_WRITE"],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.encoding": "utf8",
+        "files.eol": "\r\n",
+        "editor.useTabStops": false,
+        "editor.tabSize": 2
+      }
+    }
+  }
+}
