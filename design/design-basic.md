@@ -7,7 +7,7 @@
 ベースとなる考え方として、以下を参照しています。
 
 - [WAI-ARIA standard](https://www.w3.org/TR/wai-aria/)
-- [Material Design]()
+- [Material Design](https://m3.material.io/)
 
 ### 適用アプリケーション
 
@@ -28,12 +28,12 @@ root viewportの幅によって以下の3種類に区分します。
 
 トップレベルのlandmarkとして以下の4種類を定義します。
 
-| # | landmark | label | 概要 |
-| :---: | --- | --- | --- |
-| ① | Main | page-content | ページのメインコンテンツが配置される領域 |
-| ② | Complementry | page-complementry | ページコンテンツのヘルプ情報が配置される領域 |
-| ③ | Banner | site-header | ブランドロゴやユーザアカウントステータスなどが配置される領域 |
-| ④ | Navigation | site-navigation | アプリケーションメニューが配置される領域 |
+| # | landmark | label | role | 概要 |
+| :---: | --- | --- | --- | --- |
+| ① | Main | page-content | | ページのメインコンテンツが配置される領域 |
+| ② | Complementry | page-complementry | | ページコンテンツのヘルプ情報が配置される領域 |
+| ③ | Banner | site-header | | ブランドロゴやユーザアカウントステータスなどが配置される領域 |
+| ④ | Navigation | site-navigation | | アプリケーションメニューが配置される領域 |
 
 ### 水平レイアウト
 
@@ -66,9 +66,22 @@ root viewportの幅によって以下の3種類に区分します。
 
 ## ① Main landmark
 
+Main landmarkは、ページの主コンテンツを表示する領域です。
+
+| landmark | label | 概要 |
+| --- | --- | --- |
+| Header | page-header | |
+| Region | page-body | |
+
+![](./landmark-detail-main.drawio.svg)
+
+### Header
+
+### Region
+
 ## ② Complementry landmark
 
-Complementry landmarkは、現在表示されているページに対応したヘルプ情報が
+Complementry landmarkは、現在表示されているページに対応したヘルプ情報を表示する領域です。
 
 ## ③ Banner landmark
 
@@ -76,13 +89,13 @@ Complementry landmarkは、現在表示されているページに対応した�
 
 | Window class | 表示方式 |
 | --- | --- |
-| Extra | navigation rails, navigation drawを常時表示 |
-| Large | navigation railsを常時表示、navigation drawをオーバーレイ |
+| Extra | navigation rails, navigation drawerを常時表示 |
+| Large | navigation railsを常時表示、navigation drawerをオーバーレイ |
 | small | navigation barを表示 |
 
 ### Navigation Rail
 
-### Navigation Draw
+### Navigation Drawer
 
 ### Navigation Bar
 
